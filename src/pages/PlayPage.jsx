@@ -2,6 +2,7 @@ import { useState } from "react"
 import LettersContainer from "../components/LettersContainer"
 import { data } from "../data/index.js"
 import Button from "../components/Button"
+import { checkWords } from "../utils/utils.js"
 
 const PlayPage = () => {
   const [level, setLevel] = useState(1)
@@ -16,7 +17,10 @@ const PlayPage = () => {
   }
 
   const nextLevel = () => {  
-    console.log("next level")
+	let result = checkWords(data["es"][level - 1].answer, [...words, word.join("")])
+	console.log(result)
+	setWord([])
+	setWords([])
   }
 
   return (
