@@ -32,7 +32,7 @@ const PlayPage = () => {
         handleButton={handleLetter}
         arr={data["es"][level - 1].letters}
       />
-      <ButtonsContainer arr={word} />
+      <ButtonsContainer arr={word} bgPrimary={false} />
       <div className='mt-5'>
         {words.length < 2 ? (
           <Button handleButton={nextWord} text={"Next Word"} />
