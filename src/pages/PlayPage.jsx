@@ -1,8 +1,7 @@
 import { useState } from "react"
-import ButtonsContainer from "../components/ButtonsContainer"
 import { data } from "../data/index.js"
-import Button from "../components/Button"
 import { checkWords } from "../utils/utils.js"
+import BoxContainer from "../components/BoxContainer.jsx"
 
 const PlayPage = () => {
   const [level, setLevel] = useState(1)
@@ -27,20 +26,14 @@ const PlayPage = () => {
   }
 
   return (
-    <div>
-      <ButtonsContainer
-        handleButton={handleLetter}
-        arr={data["es"][level - 1].letters}
-      />
-      <ButtonsContainer arr={word} bgPrimary={false} />
-      <div className='mt-5'>
-        {words.length < 2 ? (
-          <Button handleButton={nextWord} text={"Next Word"} />
-        ) : (
-          <Button handleButton={nextLevel} text={"Check"} />
-        )}
-      </div>
-    </div>
+    <BoxContainer
+      letters={data["es"][level - 1].letters}
+      word={word}
+      handleLetter={handleLetter}
+      wordsLength={words.length}
+      nextWord={nextWord}
+      nextLevel={nextLevel}
+    />
   )
 }
 
