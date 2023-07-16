@@ -15,7 +15,7 @@ const PlayPage = () => {
     setWord([])
   }
 
-  const nextLevel = () => {
+  const checkAnswer = () => {
     let result = checkWords(data["es"][level - 1].answer, [
       ...words,
       word.join(""),
@@ -32,7 +32,7 @@ const PlayPage = () => {
       handleLetter={handleLetter}
       wordsLength={words.length}
       nextWord={nextWord}
-      nextLevel={nextLevel}
+      checkAnswer={checkAnswer}
     />
   )
 }

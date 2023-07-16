@@ -7,7 +7,7 @@ const BoxContainer = ({
   handleLetter,
   wordsLength,
   nextWord,
-  nextLevel,
+  checkAnswer,
 }) => {
   return (
     <div className='flex flex-col gap-5'>
@@ -16,7 +16,7 @@ const BoxContainer = ({
       {wordsLength < 2 ? (
         <Button handleButton={nextWord} text={"Next Word"} />
       ) : (
-        <Button handleButton={nextLevel} text={"Check"} />
+        <Button handleButton={checkAnswer} text={"Check"} />
       )}
     </div>
   )
