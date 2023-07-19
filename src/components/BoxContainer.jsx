@@ -12,11 +12,21 @@ const BoxContainer = ({
   return (
     <div className='flex flex-col gap-5'>
       <ButtonsContainer handleButton={handleLetter} arr={letters} />
-      <ButtonsContainer arr={word} bgPrimary={false} />
+      <div className='min-h-[50px]'>
+        <ButtonsContainer arr={word} bgPrimary={false} />
+      </div>
       {wordsLength < 2 ? (
-        <Button handleButton={nextWord} text={"Next Word"} />
+        <Button
+          handleButton={nextWord}
+          text={"Next Word"}
+          disabled={word.length > 0 ? false : true}
+        />
       ) : (
-        <Button handleButton={checkAnswer} text={"Check"} />
+        <Button
+          handleButton={checkAnswer}
+          text={"Check"}
+          disabled={word.length > 0 ? false : true}
+        />
       )}
     </div>
   )
