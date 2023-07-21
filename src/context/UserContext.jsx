@@ -1,4 +1,8 @@
 import { useState, useEffect, createContext } from "react"
+import {
+  checkingCurrentGameState,
+  setStorageItem,
+} from "../utils/checkingStorage"
 
 export const UserContext = createContext()
 
@@ -8,13 +12,14 @@ export const UserProvider = ({ children }) => {
   })
 
   useEffect(() => {
-    let currentGameState = { currentLevel: 1 }
+    let currentGameState = checkingCurrentGameState()
     setGameState(currentGameState)
   }, [])
 
   const updateGameState = (id, value) => {
     let newGameState = { ...gameState, [id]: value }
     setGameState(newGameState)
+    setStorageItem("gameState", newGameState)
   }
 
   const updateLevel = () => {
