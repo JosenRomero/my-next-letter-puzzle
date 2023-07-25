@@ -13,7 +13,7 @@ const BoxContainer = ({
     <div className='flex flex-col gap-5'>
       <ButtonsContainer handleButton={handleLetter} arr={letters} />
       <div className='min-h-[50px]'>
-        <ButtonsContainer arr={word} bgPrimary={false} />
+        <ButtonsContainer arr={word} bgPrimary={false} disabled={true} />
       </div>
       {wordsLength < 2 ? (
         <Button
