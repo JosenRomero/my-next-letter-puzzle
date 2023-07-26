@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import ChangeTheme from "./ChangeTheme"
+import HowToPlay from "./HowToPlay"
 
 const Menu = () => {
   return (
@@ -11,7 +12,8 @@ const Menu = () => {
         >
           Next Letter Puzzle
         </Link>
-        <div className='text-zinc-800 dark:text-white flex gap-x-3'>
+        <div className='text-zinc-800 dark:text-white flex gap-x-5'>
+          <HowToPlay />
           <ChangeTheme />
         </div>
       </div>
