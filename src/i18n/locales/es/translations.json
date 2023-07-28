@@ -1,0 +1,18 @@
+{
+  "buttons": {
+    "nextWord": "Siguiente palabra",
+    "check": "Comprobar",
+    "nextLevel": "Siguiente nivel",
+    "tryAgain": "Intentar otra vez"
+  },
+  "title": {
+    "notFoundPage": "Página No Encontrada",
+    "win": "Ganaste!",
+    "lost": "Perdiste!"
+  },
+  "howToPlay": {
+    "title": "Cómo jugar",
+    "paragraph1": ""
+  },
+  "footerText": "Desarrollado por"
+}

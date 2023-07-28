@@ -1,0 +1,18 @@
+{
+  "buttons": {
+    "nextWord": "Next Word",
+    "check": "Check",
+    "nextLevel": "Next Level",
+    "tryAgain": "Try Again"
+  },
+  "title": {
+    "notFoundPage": "Not Found Page",
+    "win": "Win!",
+    "lost": "Lost!"
+  },
+  "howToPlay": {
+    "title": "How to play",
+    "paragraph1": ""
+  },
+  "footerText": "Developed by"
+}
