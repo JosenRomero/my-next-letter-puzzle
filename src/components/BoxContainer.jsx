@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import Button from "./Button"
 import ButtonsContainer from "./ButtonsContainer"
 
@@ -9,6 +10,8 @@ const BoxContainer = ({
   nextWord,
   checkAnswer,
 }) => {
+  const { t } = useTranslation()
+
   return (
     <div className='flex flex-col gap-5'>
       <ButtonsContainer handleButton={handleLetter} arr={letters} />
@@ -18,13 +21,13 @@ const BoxContainer = ({
       {wordsLength < 2 ? (
         <Button
           handleButton={nextWord}
-          text={"Next Word"}
+          text={t("buttons.nextWord")}
           disabled={word.length > 0 ? false : true}
         />
       ) : (
         <Button
           handleButton={checkAnswer}
-          text={"Check"}
+          text={t("buttons.check")}
           disabled={word.length > 0 ? false : true}
         />
       )}

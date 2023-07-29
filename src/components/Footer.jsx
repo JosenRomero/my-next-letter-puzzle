@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next"
+
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className='text-center p-2 [&_*]:text-zinc-800 [&_*]:dark:text-white'>
       <p>
-        <span>Developed by </span>
+        <span>{t("footerText")} </span>
         <a
           className='hover:underline hover:text-zinc-800'
           href='https://github.com/JosenRomero'
