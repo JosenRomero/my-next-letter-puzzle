@@ -9,7 +9,7 @@ const Modal = ({ children, isOpen, closeModal, title }) => {
       onClick={closeModal}
     >
       <div
-        className='p-5 bg-gray-100 dark:bg-zinc-800 rounded-xl md:w-[500px] mx-3'
+        className='p-5 bg-gray-100 dark:bg-zinc-800 rounded-xl mx-3'
         onClick={handleModalDialogClick}
       >
         <div className='flex'>

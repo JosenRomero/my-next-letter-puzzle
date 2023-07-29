@@ -12,7 +12,12 @@
   },
   "howToPlay": {
     "title": "Cómo jugar",
-    "paragraph1": ""
+    "description": "En cada nivel se te proporcionará un conjunto de letras y un tema.",
+    "goal": "Tu objetivo es encontrar todas las palabras relacionadas con el tema utilizando las letras proporcionadas.",
+    "item1": "Haz clic en las letras para formar una palabra relacionada con el tema.",
+    "item2": "Luego, presiona el botón 'Siguiente palabra' para guardar la palabra.",
+    "item3": "Repite los pasos 1 y 2 para encontrar todas las palabras posibles en el nivel.",
+    "item4": "Luego, presiona el botón 'Comprobar' para verificar tus respuestas."
   },
   "footerText": "Desarrollado por"
 }

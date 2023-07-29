@@ -12,7 +12,12 @@
   },
   "howToPlay": {
     "title": "How to play",
-    "paragraph1": ""
+    "description": "At each level, you will be provided with a set of letters and a theme.",
+    "goal": "Your goal is to find all the words related to the theme using the provided letters.",
+    "item1": "Click on the letters to form a word related to the theme.",
+    "item2": "Then, press the 'Next word' button to save the word.",
+    "item3": "Repeat steps 1 and 2 to find all possible words in the level.",
+    "item4": "Then, press the 'Check' button to verify your answers."
   },
   "footerText": "Developed by"
 }
