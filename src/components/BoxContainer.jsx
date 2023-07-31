@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next"
 import { useState } from "react"
 import BoxTop from "./BoxTop"
 import BoxBottoms from "./BoxBottoms"
@@ -6,23 +5,23 @@ import { data } from "../data/index.js"
 import { checkWords } from "../utils/utils.js"
 
 const BoxContainer = ({ level, updateWin }) => {
-  const { t } = useTranslation()
-
   const [word, setWord] = useState([])
   const [words, setWords] = useState([])
 
-  const handleLetter = (event) => setWord([...word, event.target.name])
+  const updateWord = (value) => setWord(value)
+
+  const handleLetter = (event) => updateWord([...word, event.target.name])
 
   const nextWord = () => {
     setWords([...words, word.join("")])
-    setWord([])
+    updateWord([])
   }
 
   const checkAnswer = () => {
     let answer = data["es"][level - 1].answer
     let result = checkWords(answer, [...words, word.join("")])
     updateWin(result)
-    setWord([])
+    updateWord([])
     setWords([])
   }
 
@@ -35,7 +34,8 @@ const BoxContainer = ({ level, updateWin }) => {
       />
       <BoxBottoms
         wordsLength={words.length}
-        wordLength={word.length}
+        word={word}
+        updateWord={updateWord}
         nextWord={nextWord}
         checkAnswer={checkAnswer}
       />
