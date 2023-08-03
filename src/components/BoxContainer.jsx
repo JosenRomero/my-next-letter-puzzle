@@ -18,7 +18,7 @@ const BoxContainer = ({ level, updateWin }) => {
   }
 
   const checkAnswer = () => {
-    let answer = data["es"][level - 1].answer
+    let answer = data["es"][level].answer
     let result = checkWords(answer, [...words, word.join("")])
     updateWin(result)
     updateWord([])
@@ -29,7 +29,7 @@ const BoxContainer = ({ level, updateWin }) => {
     <div className='flex flex-col gap-5'>
       <BoxTop
         handleLetter={handleLetter}
-        letter={level ? data["es"][level - 1].letters : Array(3).fill("")}
+        letter={level ? data["es"][level].letters : Array(3).fill("")}
         word={word}
       />
       <BoxBottoms
