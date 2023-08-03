@@ -1,0 +1,1 @@
+export const TOTAL_LEVELS_IN_CHAPTER_G = 10

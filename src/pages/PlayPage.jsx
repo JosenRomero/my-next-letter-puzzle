@@ -22,7 +22,12 @@ const PlayPage = () => {
       {win === null ? (
         <BoxContainer level={level} updateWin={updateWin} />
       ) : (
-        <ResultContainer win={win} nextLevel={nextLevel} tryAgain={tryAgain} />
+        <ResultContainer
+          win={win}
+          level={level}
+          nextLevel={nextLevel}
+          tryAgain={tryAgain}
+        />
       )}
     </>
   )
