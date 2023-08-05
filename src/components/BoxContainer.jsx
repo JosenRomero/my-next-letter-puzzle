@@ -31,6 +31,10 @@ const BoxContainer = ({ level, updateWin }) => {
         handleLetter={handleLetter}
         letter={level ? data["es"][level].letters : Array(3).fill("")}
         word={word}
+        level={level}
+        wordsLength={words.length}
+        wordsLengthTotal={level ? data["es"][level].answer.length : 0}
+        topic={level ? data["es"][level].topic : ""}
       />
       <BoxBottoms
         wordsLength={words.length}
