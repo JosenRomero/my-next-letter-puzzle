@@ -21,9 +21,7 @@ const BoxTop = ({
       <div className='text-center'>
         <ButtonsContainer handleButton={handleLetter} arr={letter} />
       </div>
-      <div className='min-h-[50px]'>
-        <ButtonsContainer arr={word} bgPrimary={false} disabled={true} />
-      </div>
+      <div className='min-h-[50px] text-gray-900 dark:text-gray-400 text-xl font-semibold text-center'>{word}</div>
     </>
   )
 }
