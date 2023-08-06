@@ -1,5 +1,6 @@
 {
   "buttons": {
+    "play": "Play",
     "nextWord": "Next Word",
     "check": "Check",
     "nextLevel": "Next Level",

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "../components/Layout"
+import HomePage from "../pages/HomePage"
 import PlayPage from "../pages/PlayPage"
 import NotFoundPage from "../pages/NotFoundPage"
 
@@ -9,7 +10,8 @@ const AppRouter = () => {
       <Layout>
         <Routes>
           <Route path='/'>
-            <Route index element={<PlayPage />} />
+            <Route index element={<HomePage />} />
+            <Route path='play' element={<PlayPage />} />
             <Route path='*' element={<NotFoundPage />} />
           </Route>
         </Routes>

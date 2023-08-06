@@ -1,5 +1,6 @@
 {
   "buttons": {
+    "play": "Jugar",
     "nextWord": "Siguiente palabra",
     "check": "Comprobar",
     "nextLevel": "Siguiente nivel",
