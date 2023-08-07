@@ -12,7 +12,10 @@ const checkingStorage = (key, defaultValue) => {
 }
 
 export const checkingCurrentGameState = () => {
-  let gameState = checkingStorage("gameState", { currentLevel: 1 })
+  let gameState = checkingStorage("gameState", {
+    currentLevel: 1,
+    achievements: { firstPlayers: true },
+  })
   return gameState
 }
 

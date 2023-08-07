@@ -9,6 +9,7 @@ export const UserContext = createContext()
 export const UserProvider = ({ children }) => {
   const [gameState, setGameState] = useState({
     currentLevel: null,
+    achievements: null,
   })
 
   useEffect(() => {
