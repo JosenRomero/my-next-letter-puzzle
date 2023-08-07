@@ -38,6 +38,7 @@ const BoxContainer = ({ level, updateWin }) => {
       />
       <BoxBottoms
         wordsLength={words.length}
+        wordsLengthTotal={level ? data["es"][level].answer.length : 0}
         word={word}
         updateWord={updateWord}
         nextWord={nextWord}

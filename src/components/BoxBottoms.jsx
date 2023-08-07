@@ -4,6 +4,7 @@ import Button from "./Button"
 
 const BoxBottoms = ({
   wordsLength,
+  wordsLengthTotal,
   word,
   updateWord,
   nextWord,
@@ -24,7 +25,7 @@ const BoxBottoms = ({
         text={<FiDelete size='22' />}
         disabled={word.length > 0 ? false : true}
       />
-      {wordsLength < 2 ? (
+      {wordsLength < wordsLengthTotal - 1 || wordsLengthTotal === 0 ? (
         <Button
           handleButton={nextWord}
           text={t("buttons.nextWord")}
