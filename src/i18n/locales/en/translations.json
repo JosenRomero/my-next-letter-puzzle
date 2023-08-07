@@ -24,6 +24,6 @@
     "level": "Level",
     "word": "Word"
   },
-  "endText": "Completed chapter. Congratulations!",
+  "endText": "You have completed all levels. Congratulations!",
   "footerText": "Developed by"
 }
