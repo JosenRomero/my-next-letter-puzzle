@@ -18,8 +18,7 @@ const BoxContainer = ({ level, updateWin }) => {
   }
 
   const checkAnswer = () => {
-    let answer = data["es"][level].answer
-    let result = checkWords(answer, [...words, word.join("")])
+    let result = checkWords(level, "es", [...words, word.join("")])
     updateWin(result)
     updateWord([])
     setWords([])
