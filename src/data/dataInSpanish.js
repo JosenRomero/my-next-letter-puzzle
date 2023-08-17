@@ -59,4 +59,22 @@ export const dataInSpanish = {
     answer: ["cuba", "argentina", "alemania"],
     valid_answer: [],
   },
+	11: {
+    topic: "Partes de un Automóvil",
+    letters: [ "a", "d", "e", "i", "l", "m", "n", "o", "r", "s", "t", "v"],
+    answer: ["motor", "radiador", "volante", "llantas", "asientos"],
+    valid_answer: ["llanta", "asiento"],
+  },
+	12: {
+    topic: "Alimentos Típicos de Japon",
+    letters: [ "a", "d", "e", "g", "h", "i", "m", "n", "o", "r", "s", "u"],
+    answer: ["sushi", "sashimi", "udon", "ramen", "onigiri"],
+    valid_answer: ["miso"],
+  },
+	13: {
+    topic: "Elementos químicos",
+    letters: [ "a", "e", "h", "i", "l", "o", "p", "r", "s", "t"],
+    answer: ["helio", "hierro", "potasio", "oro", "plata"],
+    valid_answer: ["litio", "itrio", "hassio", "hasio", "talio", "astato", "torio"],
+  },
 }
