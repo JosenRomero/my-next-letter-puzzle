@@ -11,6 +11,7 @@ const Footer = () => {
           className='hover:underline hover:text-zinc-800'
           href='https://github.com/JosenRomero'
           target='_blank'
+          rel='noreferrer'
         >
           José Romero
         </a>
