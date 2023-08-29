@@ -24,6 +24,16 @@
     "level": "Level",
     "word": "Word"
   },
+  "achievements": {
+    "title": "Achievements",
+    "achievementLocked": "Achievement locked",
+    "achievementCompleted": "Achievement completed",
+    "nameList": {
+      "easy": "Easy",
+      "normal": "Normal",
+      "hard": "Hard"
+    }
+  },
   "endText": "You have completed all levels. Congratulations!",
   "footerText": "Developed by"
 }

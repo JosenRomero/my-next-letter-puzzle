@@ -2,13 +2,18 @@ import { useState, useContext } from "react"
 import BoxContainer from "../components/BoxContainer.jsx"
 import ResultContainer from "../components/ResultContainer.jsx"
 import { UserContext } from "../context/UserContext.jsx"
+import { TOTAL_LEVELS } from "../utils/CONSTANTS.js"
 
 const PlayPage = () => {
   const { level, updateLevel } = useContext(UserContext)
 
   const [win, setWin] = useState(null)
 
-  const updateWin = (value) => setWin(value)
+  const updateWin = (value) => {
+    setWin(value)
+    // updateLevel in the last level
+    if (value?.nextLevel && level + 1 > TOTAL_LEVELS) updateLevel()
+  }
 
   const nextLevel = () => {
     updateLevel()

@@ -24,6 +24,16 @@
     "level": "Nivel",
     "word": "Palabra"
   },
+  "achievements": {
+    "title": "Logros",
+    "achievementLocked": "Logro bloqueado",
+    "achievementCompleted": "Logro completado",
+    "nameList": {
+      "easy": "Fácil",
+      "normal": "Normal",
+      "hard": "Difícil"
+    }
+  },
   "endText": "Has completado todos los niveles. ¡Felicidades!",
   "footerText": "Desarrollado por"
 }
