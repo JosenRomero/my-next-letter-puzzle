@@ -7,7 +7,7 @@ const ResultContainer = ({ win, level, nextLevel, tryAgain }) => {
   const { t } = useTranslation()
 
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='lg:w-1/3 mx-auto flex flex-col gap-5'>
       <h3 className='text-center'>
         {win.nextLevel ? t("title.win") : t("title.lost")}
       </h3>

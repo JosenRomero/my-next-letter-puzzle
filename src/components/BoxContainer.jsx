@@ -25,7 +25,7 @@ const BoxContainer = ({ level, updateWin }) => {
   }
 
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='lg:w-1/3 mx-auto flex flex-col gap-5'>
       <BoxTop
         handleLetter={handleLetter}
         letter={level ? data["es"][level].letters : Array(3).fill("")}
