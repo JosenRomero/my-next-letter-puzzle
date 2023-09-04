@@ -15,7 +15,7 @@ const Achievements = () => {
           return (
             <div
               key={i}
-              className={`flex flex-col items-center bg-white border border-gray-200 border-t-4 rounded-lg dark:bg-zinc-800 dark:border-gray-600 ${
+              className={`flex flex-col items-center bg-white border border-gray-200 border-t-4 rounded-lg dark:bg-slate-800 dark:border-gray-600 ${
                 level > currentValue.completed
                   ? "border-t-green-400 dark:border-t-green-400"
                   : "border-t-red-400 dark:border-t-red-400"
