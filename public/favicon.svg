@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="background-color:#fff">
+
+  <rect width="14" height="14" rx="0" ry="0" transform="translate(1 1)" fill="none" stroke="#000"/>
+
+  <text dx="0" dy="0" font-size="15" font-weight="400" transform="translate(3.257574 13.834192)" stroke-width="0">
+    <tspan y="0" font-weight="400" stroke-width="0"><![CDATA[A]]></tspan>
+  </text>
+  
+  <rect width="14" height="14" rx="0" ry="0" transform="translate(17 1)" fill="none" stroke="#000"/>
+
+  <text dx="0" dy="0" font-size="15" font-weight="400" transform="translate(19.708009 13.834192)" stroke-width="0">
+    <tspan y="0" font-weight="400" stroke-width="0"><![CDATA[Z]]></tspan>
+  </text>
+  
+  <rect width="14" height="14" rx="0" ry="0" transform="translate(1 17)" fill="none" stroke="#000" stroke-dasharray="2"/>
+
+  <rect width="14" height="14" rx="0" ry="0" transform="translate(17 17)" fill="#bbf7d0" stroke="#000" stroke-dasharray="2"/>
+  
+  <text dx="0" dy="0" font-size="15" font-weight="400" transform="translate(19.257574 29.834192)" stroke-width="0">
+    <tspan y="0" font-weight="400" stroke-width="0"><![CDATA[A]]></tspan>
+  </text>
+  
+</svg>
