@@ -7,7 +7,7 @@ const ResultContainer = ({ win, level, nextLevel, tryAgain }) => {
   const { t } = useTranslation()
 
   return (
-    <div className='bg-white lg:w-1/3 mx-auto flex flex-col gap-5 p-8 rounded-2xl dark:bg-slate-800 border border-black dark:border-white'>
+    <div className='bg-white lg:w-1/3 mx-auto flex flex-col gap-5 p-8 rounded-2xl dark:bg-slate-800 border border-black dark:border-white animate-fade-in-down'>
       <h3 className='text-center'>
         {win.nextLevel ? t("title.win") : t("title.lost")}
       </h3>

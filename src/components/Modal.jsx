@@ -9,7 +9,7 @@ const Modal = ({ children, isOpen, closeModal, title }) => {
       onClick={closeModal}
     >
       <div
-        className='bg-white p-5 rounded-xl m-3 dark:bg-slate-800 overflow-y-scroll h-[90vh] sm:overflow-auto sm:h-auto'
+        className='bg-white p-5 rounded-xl m-3 dark:bg-slate-800 overflow-y-scroll h-[90vh] sm:overflow-auto sm:h-auto animate-fade-in-down'
         onClick={handleModalDialogClick}
       >
         <div className='flex'>

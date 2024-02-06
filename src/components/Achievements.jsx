@@ -8,7 +8,7 @@ const Achievements = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='p-4 text-center'>
+    <div className='p-4 text-center animate-fade-in-up'>
       <h2 className='mb-5'>{t("achievements.title")}</h2>
       <div className='flex flex-wrap justify-center gap-8'>
         {achievements.map((currentValue, i) => {
