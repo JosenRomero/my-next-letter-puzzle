@@ -1,6 +1,6 @@
 import Button from "./Button"
 
-const ButtonsContainer = ({ handleButton, arr, bgPrimary, disabled }) => {
+const ButtonsContainer = ({ handleButton, arr }) => {
   return (
     <div>
       {arr.map((item, i) => {
@@ -9,8 +9,6 @@ const ButtonsContainer = ({ handleButton, arr, bgPrimary, disabled }) => {
             key={i}
             handleButton={handleButton}
             text={item}
-            bgPrimary={bgPrimary}
-            disabled={disabled}
           />
         )
       })}
