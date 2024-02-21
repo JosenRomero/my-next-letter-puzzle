@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import BoxTop from "./BoxTop"
 import BoxBottoms from "./BoxBottoms"
 import { data } from "../data/index.js"
@@ -7,14 +7,19 @@ import { checkWords } from "../utils/utils.js"
 const BoxContainer = ({ level, updateWin }) => {
   const [word, setWord] = useState([])
   const [words, setWords] = useState([])
+  const box = useRef(0)
 
   const updateWord = (value) => setWord(value)
 
   const handleLetter = (event) => updateWord([...word, event.target.name])
 
   const nextWord = () => {
-    setWords([...words, word.join("")])
-    updateWord([])
+    box.current.className = "animate-fade-out"
+    setTimeout(() => {
+      setWords([...words, word.join("")])
+      updateWord([])
+      box.current.className = ""
+    }, 300)
   }
 
   const checkAnswer = () => {
@@ -25,7 +30,7 @@ const BoxContainer = ({ level, updateWin }) => {
   }
 
   return (
-    <div className='bg-white lg:w-1/3 mx-auto flex flex-col gap-5 p-8 rounded-2xl dark:bg-slate-800 border border-black dark:border-white animate-fade-in-down'>
+    <div className='bg-white lg:w-1/3 mx-auto flex flex-col gap-5 p-8 rounded-lg dark:bg-slate-800 border border-gray-200 shadow dark:border-gray-700 animate-fade-in-down'>
       <BoxTop
         handleLetter={handleLetter}
         letter={level ? data["es"][level].letters : Array(3).fill("")}
@@ -34,6 +39,7 @@ const BoxContainer = ({ level, updateWin }) => {
         wordsLength={words.length}
         wordsLengthTotal={level ? data["es"][level].answer.length : 0}
         topic={level ? data["es"][level].topic : ""}
+        refBox={box}
       />
       <BoxBottoms
         wordsLength={words.length}

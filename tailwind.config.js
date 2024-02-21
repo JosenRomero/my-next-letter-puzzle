@@ -6,7 +6,8 @@ export default {
     extend: {
       animation: {
         "fade-in-down": "fade-in-down 0.6s ease-in-out",
-        "fade-in-up": "fade-in-up 0.6s ease-in-out"
+        "fade-in-up": "fade-in-up 0.6s ease-in-out",
+        "fade-out": "fade-out 0.6s ease-out"
       },
       keyframes: {
         "fade-in-down": {
@@ -16,6 +17,10 @@ export default {
         "fade-in-up": {
           "0%": { "opacity": "0", "transform": "translateY(20px)" },
           "100%": { "opacity": "1", "transform": "translateY(0)" }
+        },
+        "fade-out": {
+          "0%": { "opacity": "1" },
+          "100%": { "opacity": "0" }
         }
       }
     },

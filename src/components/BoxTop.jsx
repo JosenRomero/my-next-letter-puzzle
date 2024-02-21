@@ -9,6 +9,7 @@ const BoxTop = ({
   wordsLength,
   wordsLengthTotal,
   topic,
+  refBox
 }) => {
   return (
     <>
@@ -21,7 +22,9 @@ const BoxTop = ({
       <div className='text-center'>
         <ButtonsContainer handleButton={handleLetter} arr={letter} />
       </div>
-      <div className='min-h-[50px] text-gray-900 dark:text-gray-400 text-xl font-semibold text-center'>{word}</div>
+      <div className='min-h-[50px] text-gray-900 dark:text-gray-400 text-xl font-semibold text-center'>
+        <p ref={refBox}>{word}</p>
+      </div>
     </>
   )
 }
