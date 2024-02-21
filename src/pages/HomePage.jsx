@@ -13,10 +13,13 @@ const HomePage = () => {
     <div className='flex flex-col gap-8 items-center justify-center'>
       {level !== null && level <= TOTAL_LEVELS && (
         <Link
-          className='bg-white text-gray-900 border border-gray-300 hover:bg-gray-100 hover:text-gray-900 px-5 py-2 rounded-xl dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700'
+          className='group relative z-0 overflow-hidden overflow-x-hidden rounded-md bg-cyan-500 px-8 py-2 text-neutral-50 hover:text-neutral-50'
           to={"/play"}
         >
-          {t("buttons.play")}
+          <span className="relative z-10">{t("buttons.play")}</span>
+          <span className="absolute inset-0 overflow-hidden rounded-md">
+            <span className="absolute left-0 aspect-square w-full origin-center translate-x-full rounded-full bg-cyan-600 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+          </span>
         </Link>
       )}
       <Achievements />
