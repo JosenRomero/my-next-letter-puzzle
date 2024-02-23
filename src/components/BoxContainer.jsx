@@ -24,9 +24,13 @@ const BoxContainer = ({ level, updateWin }) => {
 
   const checkAnswer = () => {
     let result = checkWords(level, "es", [...words, word.join("")])
-    updateWin(result)
-    updateWord([])
-    setWords([])
+    setWords([...words, word.join("")]) // add the last word to play the animation
+    // wait a second to play the progress bar animation
+    setTimeout(() => {
+      updateWin(result)
+      updateWord([])
+      setWords([])
+    }, 1000)
   }
 
   return (

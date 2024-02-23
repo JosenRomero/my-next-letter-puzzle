@@ -22,7 +22,8 @@
   },
   "HUD": {
     "level": "Nivel",
-    "word": "Palabra"
+    "word": "Palabra",
+    "topic": "Tema"
   },
   "achievements": {
     "title": "Logros",

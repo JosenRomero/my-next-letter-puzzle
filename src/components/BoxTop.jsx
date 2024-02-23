@@ -19,7 +19,7 @@ const BoxTop = ({
         wordsLengthTotal={wordsLengthTotal}
         topic={topic}
       />
-      <div className='text-center'>
+      <div className='text-center mt-5'>
         <ButtonsContainer handleButton={handleLetter} arr={letter} />
       </div>
       <div className='min-h-[50px] text-gray-900 dark:text-gray-400 text-xl font-semibold text-center'>

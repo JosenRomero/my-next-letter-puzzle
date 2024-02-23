@@ -38,7 +38,7 @@ const BoxBottoms = ({
           handleButton={checkAnswer}
           text={t("buttons.check")}
           css={"bg-green-700 hover:bg-green-800 dark:bg-green-600 dark:hover:bg-green-700 text-white"}
-          disabled={word.length > 0 ? false : true}
+          disabled={(word.length > 0 && wordsLength < wordsLengthTotal) ? false : true}
         />
       )}
     </div>
