@@ -1,6 +1,7 @@
 import { useState, useRef } from "react"
 import BoxTop from "./BoxTop"
 import BoxBottoms from "./BoxBottoms"
+import WordsList from "./WordsList"
 import { data } from "../data/index.js"
 import { checkWords } from "../utils/utils.js"
 
@@ -11,7 +12,11 @@ const BoxContainer = ({ level, updateWin }) => {
 
   const updateWord = (value) => setWord(value)
 
-  const handleLetter = (event) => updateWord([...word, event.target.name])
+  const handleLetter = (event) => {
+    if(word.length < 20) {
+      updateWord([...word, event.target.name])
+    }
+  }
 
   const nextWord = () => {
     box.current.className = "animate-fade-out"
@@ -34,25 +39,28 @@ const BoxContainer = ({ level, updateWin }) => {
   }
 
   return (
-    <div className='bg-white lg:w-1/3 mx-auto flex flex-col gap-5 p-8 rounded-lg dark:bg-slate-800 border border-gray-200 shadow dark:border-gray-700 animate-fade-in-down'>
-      <BoxTop
-        handleLetter={handleLetter}
-        letter={level ? data["es"][level].letters : Array(3).fill("")}
-        word={word}
-        level={level}
-        wordsLength={words.length}
-        wordsLengthTotal={level ? data["es"][level].answer.length : 0}
-        topic={level ? data["es"][level].topic : ""}
-        refBox={box}
-      />
-      <BoxBottoms
-        wordsLength={words.length}
-        wordsLengthTotal={level ? data["es"][level].answer.length : 0}
-        word={word}
-        updateWord={updateWord}
-        nextWord={nextWord}
-        checkAnswer={checkAnswer}
-      />
+    <div className="flex flex-col lg:flex-row gap-5 mx-auto">
+      <div className='bg-white flex flex-col gap-5 p-8 rounded-lg dark:bg-slate-800 border border-gray-200 shadow dark:border-gray-700 animate-fade-in-down'>
+        <BoxTop
+          handleLetter={handleLetter}
+          letter={level ? data["es"][level].letters : Array(3).fill("")}
+          word={word}
+          level={level}
+          wordsLength={words.length}
+          wordsLengthTotal={level ? data["es"][level].answer.length : 0}
+          topic={level ? data["es"][level].topic : ""}
+          refBox={box}
+        />
+        <BoxBottoms
+          wordsLength={words.length}
+          wordsLengthTotal={level ? data["es"][level].answer.length : 0}
+          word={word}
+          updateWord={updateWord}
+          nextWord={nextWord}
+          checkAnswer={checkAnswer}
+        />
+      </div>
+      <WordsList words={words} />
     </div>
   )
 }

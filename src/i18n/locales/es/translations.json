@@ -25,6 +25,10 @@
     "word": "Palabra",
     "topic": "Tema"
   },
+  "wordsList": {
+    "title": "Lista de palabras",
+    "emptyList": "Lista vacía"
+  },
   "achievements": {
     "title": "Logros",
     "achievementLocked": "Logro bloqueado",

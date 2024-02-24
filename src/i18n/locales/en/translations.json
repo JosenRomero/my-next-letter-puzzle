@@ -25,6 +25,10 @@
     "word": "Word",
     "topic": "Topic"
   },
+  "wordsList": {
+    "title": "Words list",
+    "emptyList": "Empty list"
+  },
   "achievements": {
     "title": "Achievements",
     "achievementLocked": "Achievement locked",
