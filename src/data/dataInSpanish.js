@@ -21,7 +21,7 @@ export const dataInSpanish = {
     topic: "Números",
     letters: ["a", "c", "e", "i", "n", "o", "r", "s", "t", "u"],
     answer: ["cuatro", "cinco", "seis", "siete", "uno"],
-    valid_answer: ["tres"],
+    valid_answer: ["tres", "cien"],
   },
   5: {
     topic: "Bebidas",

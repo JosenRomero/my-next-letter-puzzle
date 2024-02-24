@@ -40,7 +40,7 @@ const BoxContainer = ({ level, updateWin }) => {
 
   return (
     <div className="flex flex-col lg:flex-row gap-5 mx-auto">
-      <div className='bg-white flex flex-col gap-5 p-8 rounded-lg dark:bg-slate-800 border border-gray-200 shadow dark:border-gray-700 animate-fade-in-down'>
+      <div className='bg-white sm:w-[512px] flex flex-col gap-5 p-8 rounded-lg dark:bg-slate-800 border border-gray-200 shadow dark:border-gray-700 animate-fade-in-down'>
         <BoxTop
           handleLetter={handleLetter}
           letter={level ? data["es"][level].letters : Array(3).fill("")}
