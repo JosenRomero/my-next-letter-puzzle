@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next"
 import HUDContainer from "./HUDContainer"
 import ButtonsContainer from "./ButtonsContainer"
+import DangerAlert from "./DangerAlert"
 
 const BoxTop = ({
   handleLetter,
@@ -11,6 +13,8 @@ const BoxTop = ({
   topic,
   refBox
 }) => {
+  const { t } = useTranslation()
+
   return (
     <>
       <HUDContainer
@@ -25,6 +29,7 @@ const BoxTop = ({
       <div className='min-h-[50px] text-gray-900 dark:text-gray-400 text-xl font-semibold text-center'>
         <p ref={refBox}>{word}</p>
       </div>
+      <DangerAlert show={word.length >= 20} text={`${t("alerts.dangerAlert1")}`} />
     </>
   )
 }

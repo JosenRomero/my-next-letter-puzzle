@@ -39,6 +39,9 @@
       "hard": "Hard"
     }
   },
+  "alerts": {
+    "dangerAlert1": "Add shorter words"
+  },
   "endText": "You have completed all levels. Congratulations!",
   "footerText": "Developed by"
 }

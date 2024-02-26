@@ -39,6 +39,9 @@
       "hard": "Difícil"
     }
   },
+  "alerts": {
+    "dangerAlert1": "Agrega palabras más cortas"
+  },
   "endText": "Has completado todos los niveles. ¡Felicidades!",
   "footerText": "Desarrollado por"
 }
