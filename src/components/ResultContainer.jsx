@@ -12,11 +12,11 @@ const ResultContainer = ({ win, level, nextLevel, tryAgain }) => {
         {win.nextLevel ? t("title.win") : t("title.lost")}
       </h3>
       <CirclesContainer arr={win.arr} />
-      {win.nextLevel && level + 1 > TOTAL_LEVELS && (
+      {win.nextLevel && level > TOTAL_LEVELS && (
         <p className='p-2 bg-lime-500 text-white text-center'>{t("endText")}</p>
       )}
       <div className="text-center">
-        {win.nextLevel && level + 1 <= TOTAL_LEVELS && (
+        {win.nextLevel && level <= TOTAL_LEVELS && (
           <Button handleButton={nextLevel} text={t("buttons.nextLevel")} />
         )}
         {!win.nextLevel && (
