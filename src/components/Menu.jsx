@@ -8,9 +8,9 @@ const Menu = () => {
     <nav className='p-4'>
       <div className='md:w-3/4 mx-auto flex items-center md:justify-between gap-x-3'>
         <div className='flex gap-2 items-center'>
-          <img className='w-9 h-9' src={icon} />
+          <img className='w-16 h-16' src={icon} />
           <Link
-            className='text-zinc-800 hover:underline hover:text-zinc-800 dark:text-white font-bold text-lg'
+            className='text-cyan-500 hover:underline hover:text-cyan-500 dark:text-white font-bold text-lg'
             to={"/"}
           >
             Next Letter Puzzle
