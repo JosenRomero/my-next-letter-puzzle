@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import Achievements from "../components/Achievements"
 import { TOTAL_LEVELS } from "../utils/CONSTANTS.js"
+import Logo from "../components/Logo.jsx"
 
 const HomePage = () => {
   const { level } = useContext(UserContext)
@@ -11,9 +12,10 @@ const HomePage = () => {
 
   return (
     <div className='flex flex-col gap-8 items-center justify-center'>
+      <Logo />
       {level !== null && level <= TOTAL_LEVELS && (
         <Link
-          className='group relative z-0 overflow-hidden overflow-x-hidden rounded-md bg-cyan-500 px-8 py-2 text-neutral-50 hover:text-neutral-50'
+          className='group relative z-0 overflow-hidden overflow-x-hidden rounded-md bg-cyan-500 px-8 py-2 text-neutral-50 hover:text-neutral-50 hover:scale-125 duration-100'
           to={"/play"}
         >
           <span className="relative z-10">{t("buttons.play")}</span>

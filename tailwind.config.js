@@ -7,7 +7,9 @@ export default {
       animation: {
         "fade-in-down": "fade-in-down 0.6s ease-in-out",
         "fade-in-up": "fade-in-up 0.6s ease-in-out",
-        "fade-out": "fade-out 0.6s ease-out"
+        "fade-out": "fade-out 0.6s ease-out",
+        "bounce-2s": "bounce 2s infinite",
+        "bounce-3s": "bounce 3s infinite"
       },
       keyframes: {
         "fade-in-down": {
