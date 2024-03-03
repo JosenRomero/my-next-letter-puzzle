@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react"
 import { useTranslation } from "react-i18next"
+import Indicator from "./Indicator"
 
 const HUDContainer = ({ level, wordsLength, wordsLengthTotal, topic }) => {
   const progressBar = useRef(0)
@@ -28,13 +29,7 @@ const HUDContainer = ({ level, wordsLength, wordsLengthTotal, topic }) => {
           <div ref={progressBar} className="bg-cyan-500 h-2.5 rounded-full dark:bg-cyan-600 w-[5%] transition-all ease-out duration-1000"></div>
         </div>
       </div>
-      <div className="flex justify-center gap-3">
-        <span className="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-          <span className="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
-          {t("HUD.topic")}
-        </span>
-        <p className="text-lg font-medium">{topic}</p>
-      </div>
+      <Indicator text={t("HUD.topic")} textOutside={topic} />
     </div>
   )
 }
