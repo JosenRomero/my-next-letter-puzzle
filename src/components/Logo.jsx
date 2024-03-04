@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className='flex gap-5 w-4/5 lg:w-1/2'>
+    <div className='flex gap-5 w-full sm:w-4/5 lg:w-1/2'>
       <svg className="animate-bounce-2s hover:opacity-75" viewBox='0 0 12.100 5'>
         <g
           style={{
