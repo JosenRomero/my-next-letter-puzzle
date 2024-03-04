@@ -12,16 +12,19 @@ export const achievements = [
   {
     img: achievement_easy,
     name: "achievements.nameList.easy",
+    goal: "achievements.goal.easy",
     completed: 10,
   },
   {
     img: achievement_normal,
     name: "achievements.nameList.normal",
+    goal: "achievements.goal.normal",
     completed: 20,
   },
   {
     img: achievement_hard,
     name: "achievements.nameList.hard",
+    goal: "achievements.goal.hard",
     completed: 25,
   },
 ]

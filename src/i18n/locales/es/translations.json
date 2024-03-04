@@ -37,6 +37,11 @@
       "easy": "Fácil",
       "normal": "Normal",
       "hard": "Difícil"
+    },
+    "goal": {
+      "easy": "completa 10 niveles",
+      "normal": "completa 20 niveles",
+      "hard": "completa 25 niveles"
     }
   },
   "alerts": {
